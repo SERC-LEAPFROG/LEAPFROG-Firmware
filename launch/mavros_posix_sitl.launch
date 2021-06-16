@@ -52,4 +52,10 @@
         <arg name="fcu_url" value="$(arg fcu_url)"/>
         <arg name="respawn_mavros" value="$(arg respawn_mavros)"/>
     </include>
+
+    <!--Crater Locater-->
+    <node pkg="mavlink_sitl_gazebo"
+          name="crater_locator"
+          type="crater_locator.py"
+          output="screen"/>
 </launch>
